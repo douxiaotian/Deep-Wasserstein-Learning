@@ -15,6 +15,7 @@ from tqdm import tqdm
 import parameters    as par
 
 
+
 """==================================================================================================="""
 ################### INPUT ARGUMENTS ###################
 parser = argparse.ArgumentParser()
@@ -56,7 +57,7 @@ if opt.log_online:
 
 
 """==================================================================================================="""
-### Load Remaining Libraries that neeed to be loaded after comet_ml
+### Load Remaining Libraries that need to be loaded after comet_ml
 import torch, torch.nn as nn
 import torch.multiprocessing
 torch.multiprocessing.set_sharing_strategy('file_system')
