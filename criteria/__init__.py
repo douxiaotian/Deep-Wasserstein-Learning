@@ -3,6 +3,7 @@ from criteria import triplet, margin, proxynca, npair
 from criteria import lifted, contrastive, softmax
 from criteria import angular, snr, histogram, arcface
 from criteria import softtriplet, multisimilarity, quadruplet
+from criteria import wcontrastive, wtriplet
 ### Non-Standard Criteria
 from criteria import moco, adversarial_separation, fast_moco, invariant_spread, dc, imrot
 ### Basic Libs
@@ -30,6 +31,8 @@ def select(loss, opt, to_optim, batchminer=None):
               'moco': moco,
               'dc':dc,
               'imrot':imrot,
+              'wcontrastive':wcontrastive,
+              'wtriplet':wtriplet,
               'fast_moco':fast_moco,
               'invariantspread':invariant_spread}
 
